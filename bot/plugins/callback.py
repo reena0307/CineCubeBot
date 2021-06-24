@@ -1600,9 +1600,9 @@ async def cb_about(bot, update: CallbackQuery):
 
     text=f"<i><u>Bot's Status</u></i>\n"
     text+=f"\n<b><i>Bot's Uptime:</i></b> <code>{time_formatter(time.time() - start_uptime)}</code>\n"
-    text+=f"\n<b><i>Bot Funtion:</i></b> <i>Auto Filter Files</i>\n"
-    text+=f"""\n<b><i>Bot Support:</i></b> <a href="https://t.me/jns_fc_bots">JNS BOTS DISCUSSION</a>\n"""
-    text+="""\n<b><i>Source Code:</i></b> <a href="https://t.me/githubsoursecode">Source</a>"""
+    text+=f"\n<b><i>Bot Funtion:</i></b> <i>CineCube Bot</i>\n"
+    text+=f"""\n<b><i>Bot Support:</i></b> <a href="https://t.me/TamilRasanai">Movie Bot</a>\n"""
+    text+="""\n<b><i>Source Code:</i></b> <a href="https://t.me/mongodb">Code</a>"""
 
     buttons = [
         [
@@ -1639,10 +1639,7 @@ async def callback_data(bot, update: CallbackQuery):
 
     if query_data == "start":
         buttons = [[
-            InlineKeyboardButton('My Dev 👨‍🔬', url='https://t.me/jintons'),
-            InlineKeyboardButton('Source Code 🧾', url ='https://t.me/githubsoursecode')
-        ],[
-            InlineKeyboardButton('Support 🛠', url='https://t.me/jns_bots')
+            InlineKeyboardButton('My Dev 👨‍🔬', url='https://t.me/TamilRasanai'),
         ],[
             InlineKeyboardButton('Help ⚙', callback_data="help")
         ]]
